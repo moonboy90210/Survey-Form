@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surv.css">
+    <title>Spectra Survey form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">
+                <strong>Spectra Survey form</strong>
+            </h1>
+            <p id="description">
+                Thank you for taking your time to improve this platform
+            </p>
+        </header>
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name">Name:</label><br>
+                <input type="text" class="formcontrol" id="name" placeholder="Enter full name" required><br>
+                <label for="Email">Email:</label><br>
+                <input type="text" class="formcontrol" id="email" placeholder="Enter your Email" required><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="number" class="formcontrol" id="phone" placeholder="Enter your phone number" required><br>
+                <label for="address">Address:</label><br>
+                <input type="text" class="formcontrol" id="address" placeholder="Enter Address" required><br>
+                <label for="occupation">Occupation:</label><br>
+                <select name="occupation" title="dsf" id="dropdown" class="formcontrol" required>
+                    <option value disabled selected>Select occupation</option>
+                    <option value="Banker">Banker</option>
+                    <option value="Architect">Architect</option>
+                    <option value="Counsellor">Counsellor</option>
+                    
+                </select><br>
+                <label for="gender">Gender:</label><br>
+                <label for="">
+                    <input type="radio" class="inputRadio" name="gender" value="male"><span>Male</span>
+                </label>
+                <label for="">
+                    <input type="radio" class="inputRadio" name="gender" value="female"><span>Female</span>
+                </label>
+                <label for="">
+                    <input type="radio" class="inputRadio" name="gender" value="other">Other
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p id="answer">Please select your prefered payment method ?</p>
+                <label for="">
+                    <input type="checkbox"  class="checkbox" name="method" value="Cash">Cash
+                </label><br>
+                <label for="">
+                    <input type="checkbox" class="checkbox" name="method" value="debit/credit card">Debit/Credit Card
+                </label><br>
+                <label for="">
+                    <input type="checkbox" class="checkbox" name="method" value="Crypto">Crypto
+                </label><br>
+            </div>
+            <div class="form-group">
+                <p id="answer">Give us your feedback</p>
+                <textarea name="message" rows="15" cols="80" placeholder="Gives us your feedback here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
